@@ -5,8 +5,6 @@ $(document).ready(function() {
     event.preventDefault();
     var illness = $("#illness").val();
     var newIllness = new Illness(illness);
-    //api
     newIllness.getDoctors(illness);
-    //$("#result").text(output);
   });
 });
